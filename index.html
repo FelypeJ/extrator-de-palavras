@@ -5,15 +5,31 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Extrator de Palavras</title>
   <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body>
   <div class="container">
-    <h1>Extrator de Palavras</h1>
-    <textarea id="inputText" placeholder="Cole ou digite seu texto aqui..."></textarea>
-    <button onclick="extrairPalavras()">Extrair Palavras</button>
-    <h2>Palavras Encontradas:</h2>
-    <ul id="resultado"></ul>
+    <h1><i class="fas fa-highlighter"></i> Extrator de Palavras</h1>
+
+    <label for="inputText" class="label">Digite ou cole seu texto:</label>
+    <textarea id="inputText" placeholder="Ex: Era uma vez..."></textarea>
+
+    <button onclick="extrairPalavras()">
+      <i class="fas fa-search"></i> Extrair
+    </button>
+
+    <div class="output">
+      <h2>Resultado</h2>
+      <p id="contador">Total de palavras únicas: 0</p>
+      <ul id="resultado"></ul>
+    </div>
   </div>
+
+  <footer>
+    Feito com ❤️ por você
+  </footer>
+
   <script src="script.js"></script>
 </body>
 </html>
